@@ -19,7 +19,7 @@ Ha esetleg bármelyik megadott port foglalt akkor az `application.properties` fi
 
 Amennyiben sikeresen elindultak a servicek akkor a http://localhost:8761/ címen az `Instances currently registered with Eureka` címsor alatt látnunk kell őket.
 
-* Ha meghívjuk a http://localhost:8080/order végpontot akkor az `order-service` válaszát látjuk. Minden meghívással a `Remainincg products` száma csökken eggyel.
-* Ha a http://localhost:8081/deliver végpontot hívjuk meg akkor a `storage-service` válaszát látjuk, azon belül is magának a productnak a számát amit már az előző meghívásokkal csökkentettünk. Amennyiben ezt is röbbször hívjuk meg itt is mindig csökken az érték.
+* Ha meghívjuk a http://localhost:8080/order végpontot akkor az `order-service` válaszát látjuk. Minden meghívással a `Remaining products` száma csökken eggyel.
+* Ha a http://localhost:8081/deliver végpontot hívjuk meg akkor a `storage-service` válaszát látjuk, azon belül is magának a productnak a számát amit már az előző meghívásokkal csökkentettünk. Amennyiben ezt is röbbször hívjuk meg, akkor itt is mindig csökken az érték.
 * Ha ezek után ráfrissítünk az `order-service` végpontjára akkor láthatjuk, hogy ott is csökkent a mennyiség.  
 * A http://localhost:8000 végponton a `gateway-service` érhető el. Rajta keresztül meg tudjuk hívni a többi servicet is. A http://localhost:8000/order végpont alatt tudjuk elérni az order-servicet, itt szintén a már csökkentett product számát látjuk.  
