@@ -10,7 +10,7 @@
 
 * A http://localhost:9200/ címre egy `GET` kérést küldünk és ha megfelelően elindult a szerver akkor a következő JSON válaszhoz hasonlót kell kapjunk:
 
-           {
+      {
         "name" : "19e041b787ce",
         "cluster_name" : "docker-cluster",
         "cluster_uuid" : "lMoqryNqRKWWDKHdluE8qA",
@@ -37,7 +37,7 @@
 * Amennyiben a `/chat` végpontra egy post kérést küldünk a ChatMessageDto-ban meghatározott struktúra szerint akkor belerakja a rendszer az üzenetet az elasticsearchbe.
 * Példa az üzenetre: 
 
-           {
+      {
         "id": "1",
         "message": "Hello World!",
         "sender": "Fanni",
@@ -48,13 +48,13 @@
 * Ha sikeres a küldés akkor a `/chat` végpontra ha küldünk egy `GET` kérést aminek a bodyjában megadunk egy `query` értéket, akkor tudunk szűrni az üzenetekre `sender` alapján.
 * Például ha én a következő body-t küldöm:
 
-           {
+      {
       "query": "Fanni"
       } 
       
 * Akkor a következő üzenetet kapom válaszként: 
 
-          {
+      {
         "content": [
             {
                 "id": "1",
@@ -94,7 +94,7 @@
 * Látható hogy legfelül megjelent az imént elküldött üzenetem. 
 * Kereshetünk message alapján is a `/chat/bymessage` végponton. A query ugyan úgy néz ki mint az előbb csak az értékének a `message` értékét adjuk meg. 
 
-           {
+      {
       "query": "Hello World!"
       } 
 
