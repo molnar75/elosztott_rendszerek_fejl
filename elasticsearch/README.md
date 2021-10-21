@@ -49,7 +49,7 @@
 * Például ha én a következő body-t küldöm:
 
       {
-      "query": "Fanni"
+        "query": "Fanni"
       } 
       
 * Akkor a következő üzenetet kapom válaszként: 
@@ -95,7 +95,7 @@
 * Kereshetünk message alapján is a `/chat/bymessage` végponton. A query ugyan úgy néz ki mint az előbb csak az értékének a `message` értékét adjuk meg. 
 
       {
-      "query": "Hello World!"
+        "query": "Hello World!"
       } 
 
 * A válasz pontosan ugyan az lesz mint az előző esetben. 
