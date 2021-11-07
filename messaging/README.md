@@ -5,7 +5,7 @@
         MessagingApplication.java vagy messaging mappa -> Run as -> Sping Boot App
 
 * Az alkalmazás a http://localhost:8080/ porton indul el.
-* A `connect` gombra kattintva csatlakozhatunk a szobához
+* A `connect` gombra kattintva csatlakozhatunk a szobához.
 * Csatlakozás után a jobb oldali mezőbe beírt szöveget el tudjuk küldeni, ami küldés után egyből megjelenik a `Messages` alatt.
 * Egy példa ilyen ünezetre:
 

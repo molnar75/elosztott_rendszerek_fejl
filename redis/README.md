@@ -11,7 +11,7 @@
 * Az alkalamzás a http://localhost:8080/ porton indul el.
 * Egy `POST` kérést küldve a címre új személyt tudunk megadni. A küldendő JSON fomrátum a következő:
 
-        {"id": "0", "firstname": "Test", "lastname": "User"}'
+        {"id": "0", "firstname": "Test", "lastname": "User"}
         
 * Ezután a http://localhost:8080/person/ porton megadva a user id-ját le tudjuk kérdezni az adott személyt.
 
